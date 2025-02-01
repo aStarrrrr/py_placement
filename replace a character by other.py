@@ -1,7 +1,7 @@
 import re
 
 sample = "Abhinand#$!Shaji$#"
-final = re.sub(r'(?<=\w)[$#!]+(?=\w)', ' ', sample)
+final = re.sub(r'(?<=\w)[^a-zA-Z0-9]+(?=\w)', ' ', sample)
 
 print(final)
 
