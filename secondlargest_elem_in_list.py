@@ -1,0 +1,6 @@
+arr = list(map(int,input("Enter the number of elements in the list: ").split()))
+print(arr)
+print("----------Finding the second largest element in the list----------")
+duplicates_removed = list(set(arr))
+duplicates_removed.sort(reverse=True)
+print(duplicates_removed[1] if len(duplicates_removed) > 1 else "There is no second largest element in the list")
